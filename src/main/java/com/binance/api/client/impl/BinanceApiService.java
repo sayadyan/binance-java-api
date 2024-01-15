@@ -6,6 +6,7 @@ import com.binance.api.client.domain.OrderType;
 import com.binance.api.client.domain.SwapRemoveType;
 import com.binance.api.client.domain.TimeInForce;
 import com.binance.api.client.domain.account.*;
+import com.binance.api.client.domain.account.Trade;
 import com.binance.api.client.domain.account.request.CancelOrderListResponse;
 import com.binance.api.client.domain.account.request.CancelOrderResponse;
 import com.binance.api.client.domain.event.ListenKey;
