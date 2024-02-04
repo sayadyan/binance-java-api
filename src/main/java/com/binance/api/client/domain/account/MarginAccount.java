@@ -30,6 +30,8 @@ public class MarginAccount {
 
   private boolean transferEnabled;
 
+  private String accountType;
+
   private List<MarginAssetBalance> userAssets;
 
   public boolean isBorrowEnabled() {
@@ -104,6 +106,14 @@ public class MarginAccount {
     this.transferEnabled = transferEnabled;
   }
 
+  public String getAccountType() {
+    return accountType;
+  }
+
+  public void setAccountType(String accountType) {
+    this.accountType = accountType;
+  }
+
   public List<MarginAssetBalance> getUserAssets() {
     return userAssets;
   }
@@ -130,11 +140,14 @@ public class MarginAccount {
     return new ToStringBuilder(this, BinanceApiConstants.TO_STRING_BUILDER_STYLE)
         .append("borrowEnabled", borrowEnabled)
         .append("marginLevel", marginLevel)
+        .append("collateralMarginLevel", collateralMarginLevel)
         .append("totalAssetOfBtc", totalAssetOfBtc)
         .append("totalLiabilityOfBtc", totalLiabilityOfBtc)
         .append("totalNetAssetOfBtc", totalNetAssetOfBtc)
+        .append("totalCollateralValueInUSDT", totalCollateralValueInUSDT)
         .append("tradeEnabled", tradeEnabled)
         .append("transferEnabled", transferEnabled)
+        .append("accountType", accountType)
         .append("userAssets", userAssets)
         .toString();
   }
