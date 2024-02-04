@@ -24,6 +24,8 @@ public class MarginAccount {
 
   private String totalNetAssetOfBtc;
 
+  private String totalCollateralValueInUSDT;
+
   private boolean tradeEnabled;
 
   private boolean transferEnabled;
@@ -76,6 +78,14 @@ public class MarginAccount {
 
   public void setTotalNetAssetOfBtc(String totalNetAssetOfBtc) {
     this.totalNetAssetOfBtc = totalNetAssetOfBtc;
+  }
+
+  public String getTotalCollateralValueInUSDT() {
+    return totalCollateralValueInUSDT;
+  }
+
+  public void setTotalCollateralValueInUSDT(String totalCollateralValueInUSDT) {
+    this.totalCollateralValueInUSDT = totalCollateralValueInUSDT;
   }
 
   public boolean isTradeEnabled() {
