@@ -16,6 +16,8 @@ public class MarginAccount {
 
   private String marginLevel;
 
+  private String collateralMarginLevel;
+
   private String totalAssetOfBtc;
 
   private String totalLiabilityOfBtc;
@@ -42,6 +44,14 @@ public class MarginAccount {
 
   public void setMarginLevel(String marginLevel) {
     this.marginLevel = marginLevel;
+  }
+
+  public String getCollateralMarginLevel() {
+    return collateralMarginLevel;
+  }
+
+  public void setCollateralMarginLevel(String collateralMarginLevel) {
+    this.collateralMarginLevel = collateralMarginLevel;
   }
 
   public String getTotalAssetOfBtc() {
