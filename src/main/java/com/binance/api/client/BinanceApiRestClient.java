@@ -239,7 +239,7 @@ public interface BinanceApiRestClient {
    * @param fromId TradeId to fetch from. Default gets most recent trades.
    * @return a list of trades
    */
-  List<Trade> getMyTrades(String symbol, Integer limit, Long fromId, Long recvWindow, Long timestamp);
+  List<Trade> getMyTrades(String symbol, Integer limit, Long fromId, Long recvWindow, Long timestamp, Long orderId);
 
   /**
    * Get trades for a specific account and symbol.
@@ -259,6 +259,8 @@ public interface BinanceApiRestClient {
   List<Trade> getMyTrades(String symbol);
   
   List<Trade> getMyTrades(String symbol, Long fromId);
+
+  List<Trade> getMyTrades(String symbol, Long orderId, boolean ignore);
 
   /**
    * Submit a withdraw request.

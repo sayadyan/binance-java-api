@@ -53,6 +53,15 @@ public interface BinanceApiMarginRestClient {
      */
     List<Trade> getMyTrades(String symbol);
 
+    /**
+     * Get margin trades for a specific symbol.
+     *
+     * @param symbol symbol to get trades from
+     * @param orderId orderId to get trades from
+     * @return a list of trades
+     */
+    List<Trade> getMyTrades(String symbol, Long orderId);
+
     // User stream endpoints
 
     /**
