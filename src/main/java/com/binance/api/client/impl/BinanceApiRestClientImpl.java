@@ -231,7 +231,7 @@ public class BinanceApiRestClientImpl implements BinanceApiRestClient {
 
 	@Override
 	public List<Trade> getMyTrades(String symbol, Long orderId, boolean ignore) {
-		return getMyTrades(symbol, null, null, null, null, orderId);
+		return getMyTrades(symbol, null, null, null, System.currentTimeMillis(), orderId);
 	}
 
 	@Override
